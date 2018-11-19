@@ -11,7 +11,7 @@ public class GitTest {
         System.out.println("Hello git!");
 
         //添加方法
-        method1();
+        method1();//静态只能调用静态
         new GitTest().method2();
     }
 
@@ -24,6 +24,13 @@ public class GitTest {
     public void method2() {
         int i = 1;
         i += 10;
+        System.out.println(i);
+    }
+    public void method3() {
+        int i = 1;
+        i += 10;
+        method1();
+        method2();//非静态可以调用所有
         System.out.println(i);
     }
 
