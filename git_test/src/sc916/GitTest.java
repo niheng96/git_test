@@ -10,7 +10,7 @@ public class GitTest {
         System.out.println("Hello git!");
         System.out.println("Hello git!");
 
-        //添加方法
+        //演示添加方法
         method1();//静态只能调用静态
         new GitTest().method2();
     }
