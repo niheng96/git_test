@@ -12,7 +12,7 @@ public class GitTest {
 
         //演示添加方法
         method1();//静态只能调用静态
-        new GitTest().method2();
+        new GitTest().method2();//使用类调用
     }
 
     public static void method1() {
